@@ -24,7 +24,6 @@ void initializeTypewriter() {
      pulseHigh(RCLKpin);
      keytocharARRAY[init_i] = INVALID;// until explicity programmed, each value in the array returns invalid.
   }
-    keytocharARRAY[SPACEBARsensor]=KEY_SPACE;
 
   
 }

@@ -25,10 +25,10 @@ byte waitForKeystroke(){
      NOCONTACTPRESSED = false;
    }
 
-   if(digitalRead(reed1) != polarity1){key = 96;} 
-   if(digitalRead(reed2) != polarity2){key = 97;}
-   if(digitalRead(reed3) != polarity3){key = 98;}
-   
+   if(digitalRead(reed1) != polarity1 && shiftkey!=reed1){key = 96;} 
+   if(digitalRead(reed2) != polarity2 && shiftkey!=reed2){key = 97;}
+   if(digitalRead(reed3) != polarity3 && shiftkey!=reed3){key = 98;}
+   if(digitalRead(reed4) != polarity4 && shiftkey!=reed4){key = 99;}
    if (key != 0 && key == keyfromlastscan){
      debounce ++;
    }

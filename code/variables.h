@@ -37,7 +37,8 @@ bool CTRLflag = false;
 bool NOCONTACTPRESSED = false;
 int MODE  =  0;
 
-
+int shiftkey = 0;
+bool shiftpolarity;
 char keytocharARRAY[200]; //1-99: primary keymap.  100-199: secondary keymap (accessed with Function Key).  
 int lastkeypressed = -1;
 int lastREEDpressed = -1;
@@ -80,8 +81,7 @@ float millisTMR2 = 0;
 
 #define KEY_SEMICOLON 51
 #define KEY_PERIOD 55
-#define SPACEBARsensor 101
-#define SHIFTKEYsensor 254
+
 
 #define KEY_PERIOD 55
 #define KEY_COMMA 54
@@ -110,3 +110,5 @@ float millisTMR2 = 0;
 #define KEY_UP 82
 
 #define ASCII_A 65
+#define SHIFTEEP 200
+#define SHIFTPOLEEP 201

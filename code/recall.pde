@@ -11,6 +11,8 @@ void recall(){
   keytocharARRAY[recall_i] = EEPROM.read(recall_i); 
   }
   
+  shiftkey = EEPROM.read(SHIFTEEP);
+  shiftpolarity = EEPROM.read(SHIFTPOLEEP);
 
     RECALL_MODE = false; // end of recall mode
 }

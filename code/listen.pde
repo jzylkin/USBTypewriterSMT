@@ -14,7 +14,7 @@ void listen(){
           setbit(modekeys,CTRL_F);
     }
 
-    if (digitalRead(reed4) != polarity4){
+    if (digitalRead(shiftkey) != shiftpolarity){
           setbit(modekeys,SHIFT_F);
     }
 
