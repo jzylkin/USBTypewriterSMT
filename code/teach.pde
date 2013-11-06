@@ -45,20 +45,7 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_QUOTES);
    USBSend(KEY_ENTER);
-   
-   USBSend(KEY_B);
-   USBSend(KEY_A);
-   USBSend(KEY_C);
-   USBSend(KEY_K);
-   USBSend(KEY_S);
-   USBSend(KEY_P);
-   USBSend(KEY_A);
-   USBSend(KEY_C);
-   USBSend(KEY_E);
-   USBSend(KEY_R);
-   USBSend(KEY_SEMICOLON,UPPER);
-   GetTeachKey(KEY_BACKSPACE);
-   USBSend(KEY_ENTER);
+  
    
       
    USBSend(KEY_D);

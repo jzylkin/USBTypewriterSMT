@@ -11,7 +11,8 @@ void sendnumber(int number){
     while(mycounter<2){}// implement  delay
   
      if (hundreds != 0){
-      USBSend(KEY_8,UPPER);
+      USBSendString("ALT");
+      USBSend(KEY_EQ,UPPER);
     }
     else{
 //      USBSend(39,LOWER);

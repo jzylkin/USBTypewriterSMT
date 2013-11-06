@@ -1,7 +1,7 @@
 //#define usbInterruptIsReady()   (usbTxLen1 & 0x10)
 
 #include "UsbKeyboard.h"
-
+#include "WString.h"
 
 //THIS IS THE MAIN FILE FOR THE USB TYPEWRITER SOFTWARE
 //IT IMPLEMENTS THE SETUP AND MAIN ROUTINES AND CALLS OUT NEEDED LIBRARIES

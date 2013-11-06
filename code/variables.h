@@ -108,3 +108,5 @@ float millisTMR2 = 0;
 #define  KEY_LEFT 80
 #define KEY_DOWN 81
 #define KEY_UP 82
+
+#define ASCII_A 65
