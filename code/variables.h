@@ -28,6 +28,7 @@
 #define DEFAULT_SENSITIVITY  10//number of cycles to debounce (each cycle is 2ms)
 #define DEFAULT_DOUBLETAP 10//number of cycles to wait between consecutive presses of the same key.
 
+bool QUICKTEACH_MODE = false;
 bool SENSITIVITY_MODE = false;
 bool BEEP_MODE = false;
 bool TEACH_MODE = false;

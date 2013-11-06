@@ -67,8 +67,10 @@ void loop() {
 }
 
   }
+  else if(QUICKTEACH_MODE){
+    quickTeach();
+  }
   else if(TEACH_MODE){
-
     teach();
   }
   else if(RECALL_MODE){

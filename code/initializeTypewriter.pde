@@ -3,8 +3,12 @@ void initializeTypewriter() {
     RECALL_MODE = false;
     BEEP_MODE = false;
     SENSITIVITY_MODE = false;
-    
-  if(digitalRead(BEEPpin)==LOW){
+  
+  
+  if(digitalRead(TEACHpin) == LOW && digitalRead(BEEPpin)==LOW){
+    QUICKTEACH_MODE = true;
+  }
+  else if(digitalRead(BEEPpin)==LOW){
     BEEP_MODE = true;
   }
   else if(digitalRead(SENSITIVITYpin) == LOW){
