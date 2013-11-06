@@ -46,14 +46,7 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
    GetTeachKey(KEY_QUOTES);
    USBSend(KEY_ENTER);
   
-   
-      
-   USBSend(KEY_D);
-   USBSend(KEY_E);
-   USBSend(KEY_L);
-   USBSend(KEY_E);
-   USBSend(KEY_T);
-   USBSend(KEY_E);
+  USBSendString("DELETE");
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_DELETE);
    USBSend(KEY_ENTER);
@@ -89,47 +82,33 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
    GetTeachKey(KEY_TILDE);   
    USBSend(KEY_ENTER);   
    
-   USBSend(KEY_L,UPPER);
-   USBSend(KEY_E,UPPER);
-   USBSend(KEY_F,UPPER);
-   USBSend(KEY_T,UPPER);
+   USBSendString("LEFT");
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_LEFT);   
    USBSend(KEY_ENTER);   
    
-   USBSend(KEY_R,UPPER);
-   USBSend(KEY_I,UPPER);
-   USBSend(KEY_G,UPPER);
-   USBSend(KEY_H,UPPER);
+   USBSendString("RIGHT");
    USBSend(KEY_T,UPPER);
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_RIGHT);   
    USBSend(KEY_ENTER);   
    
-   USBSend(KEY_U,UPPER);
-   USBSend(KEY_P,UPPER);
+   USBSendString("UP");
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_UP);   
    USBSend(KEY_ENTER);   
    
-   USBSend(KEY_D,UPPER);
-   USBSend(KEY_O,UPPER);
-   USBSend(KEY_W,UPPER);
-   USBSend(KEY_N,UPPER);
+   USBSendString("DOWN");
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_DOWN);   
    USBSend(KEY_ENTER);  
    
-   USBSend(KEY_T,UPPER);
-   USBSend(KEY_A,UPPER);
-   USBSend(KEY_B,UPPER);
+  USBSendString("TAB");
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_TAB);   
    USBSend(KEY_ENTER);
       
-   USBSend(KEY_E,UPPER);
-   USBSend(KEY_S,UPPER);
-   USBSend(KEY_C,UPPER);
+   USBSendString("ESC");
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_ESC);
    USBSend(KEY_ENTER);
@@ -147,41 +126,19 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
      USBSend(KEY_ENTER);
    }
    
-   USBSend(KEY_S);
-   USBSend(KEY_P);
-   USBSend(KEY_A);
-   USBSend(KEY_C);
-   USBSend(KEY_E);
+   USBSendString("SPACE");
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_SPACE);
    USBSend(KEY_ENTER);
    
-   USBSend(KEY_E);
-   USBSend(KEY_N);
-   USBSend(KEY_T);
-   USBSend(KEY_E);
-   USBSend(KEY_R);
+   USBSendString("ENTER");
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_ENTER);
    USBSend(KEY_ENTER);
    
-   USBSend(KEY_C);
-   USBSend(KEY_A);
-   USBSend(KEY_L);
-   USBSend(KEY_I);
-   USBSend(KEY_B);
-   USBSend(KEY_R);
-   USBSend(KEY_A);
-   USBSend(KEY_T);
-   USBSend(KEY_I);
-   USBSend(KEY_O);
-   USBSend(KEY_N);
+   USBSendString("CALIBRATION");
    USBSend(KEY_SPACE);
-   USBSend(KEY_S);
-   USBSend(KEY_A);
-   USBSend(KEY_V);
-   USBSend(KEY_E);
-   USBSend(KEY_D);
+   USBSendString("SAVED");
    USBSend(KEY_1,UPPER);
    USBSend(KEY_ENTER);
    //end of optional code   
