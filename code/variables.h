@@ -1,10 +1,10 @@
 //This code defines all variables
 
-#define SERpin  12 // SERpin (serial input)
-#define RCLKpin  13 // RCLKpin (shift register clock)
+#define SERpin  18 // SERpin (serial input)
+#define RCLKpin  19 // RCLKpin (shift register clock)
 
-#define S1 17
-#define S2 16
+#define S1 16
+#define S2 17
 #define S3 15
 #define TEACHpin S1   //pushbutton that goes into teachmode
 #define FNpin S2
@@ -15,7 +15,7 @@
 #define KEYpin 6
 #define reed1 7
 #define reed2 8
-#define reed3 10
+#define reed3 9
 #define reed4 11
 
 #define SPEAKERpin 1
