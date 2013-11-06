@@ -111,5 +111,5 @@ float millisTMR2 = 0;
 #define KEY_UP 82
 
 #define ASCII_A 65
-#define SHIFTEEP 200
-#define SHIFTPOLEEP 201
+#define SHIFTEEP 210
+#define SHIFTPOLEEP 211

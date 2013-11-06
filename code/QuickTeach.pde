@@ -37,12 +37,10 @@ void quickTeach(){
   for (int key_i = 96; key_i <=99; key_i++){ 
     EEPROM.write(key_i,keytocharARRAY[key_i]);  //store key/char pair in eeprom.  key # is the eeprom address,  keytocharARRAY(key_i) is the character stored there.
   }
-  for (int key_i = 196; key_i <=199; key_i++){ 
-    EEPROM.write(key_i,keytocharARRAY[key_i]);  //store key/char pair in eeprom.  key # is the eeprom address,  keytocharARRAY(key_i) is the character stored there.
-  }
   
-  EEPROM.write(shiftkey,SHIFTEEP);
-  EEPROM.write(shiftpolarity,SHIFTPOLEEP);
+ EEPROM.write(SHIFTEEP,shiftkey);
+  EEPROM.write(SHIFTPOLEEP,shiftpolarity);
+  
   
   QUICKTEACH_MODE = false;
   

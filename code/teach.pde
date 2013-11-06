@@ -170,8 +170,8 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
   }
   
   
-  EEPROM.write(shiftkey,SHIFTEEP);
-  EEPROM.write(shiftpolarity,SHIFTPOLEEP);
+  EEPROM.write(SHIFTEEP,shiftkey);
+  EEPROM.write(SHIFTPOLEEP,shiftpolarity);
   
 
   TEACH_MODE = false; // exit teach mode
