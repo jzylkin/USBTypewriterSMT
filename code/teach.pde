@@ -169,11 +169,13 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
     EEPROM.write(key_i,keytocharARRAY[key_i]);  //store key/char pair in eeprom.  key # is the eeprom address,  keytocharARRAY(key_i) is the character stored there.
   }
   
-//  for (int key_i = 200; key_i <=214; key_i++){ 
-//    EEPROM.write(key_i,keytocharARRAY[key_i]);  //store key/char pair in eeprom.  key # is the eeprom address,  keytocharARRAY(key_i) is the character stored there.
-//  }
+  
+  EEPROM.write(shiftkey,SHIFTEEP);
+  EEPROM.write(shiftpolarity,SHIFTPOLEEP);
+  
+
   TEACH_MODE = false; // exit teach mode
-//  Serial.print("done programming");
+
 
 }
 
@@ -182,7 +184,7 @@ void GetTeachKey(byte teachkey){
    while(keypressed == 0){
    keypressed = waitForKeystroke();
    }
-//   keytocharARRAY[keypressed] = teachkey;
+
        if (digitalRead(S2) == 0){
         keytocharARRAY[keypressed+100] = teachkey;   
         sendnumber(keypressed+100);
