@@ -43,5 +43,6 @@ void quickTeach(){
   
   
   QUICKTEACH_MODE = false;
+  RECALL_MODE = true;
   
 }

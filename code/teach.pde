@@ -140,6 +140,11 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
    GetTeachKey(KEY_ENTER);
    USBSend(KEY_ENTER);
    
+   USBSendString("SECONDARY ENTER");
+   USBSend(KEY_SEMICOLON,UPPER);
+   GetTeachKey(KEY_ENTER);
+   USBSend(KEY_ENTER);
+   
    USBSendString("SPACE");
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_SPACE);
