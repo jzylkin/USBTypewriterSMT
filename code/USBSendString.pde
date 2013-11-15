@@ -8,7 +8,12 @@ void USBSendString(String s){
   
    for (int i = 0; i <= mylength; i ++ ){
       singlechar = s.charAt(i);
+      if (singlechar == ' '){
+        usbcode = KEY_SPACE;
+      }
+      else{
       usbcode = singlechar + (KEY_A - ASCII_A); // add character to an offset that corrects for the difference between USB code and ascii code.
+      }
       USBSend(usbcode,UPPER);
    }
     
