@@ -15,6 +15,7 @@ byte waitForKeystroke(){
       pulseHigh(RCLKpin);
       if (digitalRead(KEYpin) == HIGH){
         key = shift_i;
+ //       if (key == lastkeypressed){break;}//if the same key is being held down from last time, look no further (block out other keys)
       }
     }
 

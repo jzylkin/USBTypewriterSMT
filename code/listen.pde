@@ -37,8 +37,13 @@ void listen(){
    if (keypressed == INVALID){}//do nothing if keypress is not valid.
    
    else if (keypressed%100 >= 96){ //if this is a reed switch
-             
-        if ( keypressed%100 != lastREEDpressed || waitcount > doubletaptime){// if this is not a repeat of the same REED switch or if all keys have been released for doubletaptime.
+       if((keytocharARRAY[keypressed%100] == KEY_ENTER)&&(keytocharARRAY[lastREEDpressed%100] == KEY_SPACE)&&(waitcount<=2)){ //IF THE ENTER KEY IS PRESSED IMMEDIATELY AFTER THE SPACE BAR IS PRESSED, WAITCOUNT IS ZERO
+       //DO NOT SEND ENTER IN THIS CASE -- USER CAN HOLD SPACEBAR TO PREVENT A RETURN CARRIAGE FROM BEING SENT
+       }
+       else if((keytocharARRAY[keypressed%100] == KEY_SPACE)&&(keytocharARRAY[lastREEDpressed%100] == KEY_ENTER)&&(waitcount<=2)){//IF THE SPACE KEY IS PRESSED IMMEDIATELY AFTER THE ENTER BAR IS PRESSED, WAITCOUNT IS ZERO
+       //DO NOT SEND SPACE IN THIS CASE -- AFTER RELEASING ENTER IN THE ABOVE CASE, SPACEBAR SHOULD NOT REGISTER AGAIN.
+       }
+       else if ( keypressed%100 != lastREEDpressed || waitcount > doubletaptime){// if this is not a repeat of the same REED switch or if all keys have been released for doubletaptime.
            USBSend(keytosend,modekeys);
         }
         

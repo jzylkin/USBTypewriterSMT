@@ -1,4 +1,5 @@
 void quickTeach(){
+
    USBSendString("BACKSPACE");
    USBSend(KEY_SEMICOLON,UPPER);
    GetTeachKey(KEY_BACKSPACE);

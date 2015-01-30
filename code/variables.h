@@ -25,7 +25,7 @@
 #define TIMER2FREQ 10//Timer2 interrupts occur every 20ms.
 
 
-#define DEFAULT_SENSITIVITY  10//number of cycles to debounce (each cycle is 2ms)
+#define DEFAULT_SENSITIVITY  15//number of cycles to debounce (each cycle is 2ms)
 #define DEFAULT_DOUBLETAP 10//number of cycles to wait between consecutive presses of the same key.
 
 bool QUICKTEACH_MODE = false;

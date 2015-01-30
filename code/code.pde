@@ -16,13 +16,14 @@ volatile static unsigned int mycounter = 0;
 
 //Setup initializes ports, variables, and so on, then delays 3s.  It also checks if this is teach mode or not.
 void setup() {
-  delayMs(1); //Delay 1 millisecond
   configPorts();
   digitalWrite(13,HIGH);
+  delayMs(5);//delay 5ms.
   initializeTypewriter(); // Call initialize function.
   initializeUSB();
   SetupTimer2(); // set up timer2 to run every 20 ms (50Hz). timerLoadValue is the value loaded into timer2
   mycounter = 0;
+
  
   sensitivity = EEPROM.read(EEP_SENSE); //load sensitivity value
   if(sensitivity == 255 || sensitivity == 0){

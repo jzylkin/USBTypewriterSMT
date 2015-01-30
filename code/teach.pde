@@ -2,6 +2,8 @@
 
 void teach(){
   byte keypressed;
+
+  
   PrintInstructions();
   
 //CYCLE THROUGH CHARACTERS:
@@ -88,7 +90,6 @@ for (byte learnChar = KEY_1; learnChar <= KEY_0; learnChar ++){
    USBSend(KEY_ENTER);   
    
    USBSendString("RIGHT");
-   USBSend(KEY_T,UPPER);
    USBSend(KEY_SEMICOLON,UPPER); 
    GetTeachKey(KEY_RIGHT);   
    USBSend(KEY_ENTER);   
